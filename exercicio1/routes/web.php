@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('/', 'UsuarioController@getUsers')->name('getUsers');
 Route::get('/users', 'UsuarioController@getUsers')->name('getUsers');
 Route::get('/users/create', 'UsuarioController@create')->name('create');
 Route::post('/users', 'UsuarioController@store')->name('store');
